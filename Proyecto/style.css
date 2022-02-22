@@ -69,6 +69,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-template-rows: repeat(2, minmax(150px, 1fr));
   grid-gap: 50px;
+  justify-content: center;
 }
 
 .dishes-image {
@@ -113,4 +114,15 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
 }
